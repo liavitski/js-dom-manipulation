@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1558617320-e695f0d420de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+    no-repeat center center / cover lightblue;
+  font-family: 'Michroma', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  width: 350px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px rgba(6, 53, 53, 0.493);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .timer {
+  margin-bottom: 10px;
+  font-size: 30px;
+  left: 50px;
+  /* border: 2px solid #000; */
+  min-width: 198px;
+}
+
+.container .buttons {
+  display: flex;
+  /* border: 1px solid #000; */
+  width: 100px;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .buttons button {
+  background-color: inherit;
+  border: none;
+}
+
+.container .buttons .material-symbols-outlined {
+  font-size: 30px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.container .buttons .material-symbols-outlined.green:hover {
+  color: green;
+}
+
+.container .buttons .material-symbols-outlined.red:hover {
+  color: red;
+}
